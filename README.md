@@ -28,7 +28,7 @@ checking if the car has strayed off course, two 330 ohm resistors for operating 
 ohm resistor for transmitting signals from the MP3 module, three 3.1V rechargeable batteries
 and housing for them to provide power to the H-Bridge and the Arduino boards.
 
-#Circuit Diagrams
+## Circuit Diagrams
 
 The circuit connection looks as follows in the breadboard view in Fritzing
 
@@ -38,7 +38,7 @@ The circuit connection looks as follows in the schematic view in Fritzing:
 
 ![fritzing1](https://user-images.githubusercontent.com/99695584/212975210-c9574248-70ad-4918-b27c-acb590d08abb.png)
 
-#The following libraries are included in this project:
+## The following libraries are included in this project
 
 1. Arduino_FreeRTOS: This is a library that allows users to run multiple concurrent tasks in
 an Arduino environment. It utilizes the FreeRTOS kernel to implement real-time
@@ -70,7 +70,7 @@ the display.
 that are compatible with the LCDWIKI_KBV library. It allows users to draw graphics, text,
 and shapes on the display and manage the display's memory.
 
-#The inputs:
+## The inputs
 
 The input for lane collision detection in this project is provided by a line tracker sensor, which
 sends a digital signal of either 0 or 1 to the system. A value of 0 indicates that the line is not
@@ -90,7 +90,7 @@ The motion of the car is powered by three 3.1 lithium-ion batteries, which are c
 H-bridge motor driver. The H-bridge allows the system to control the direction and speed of the
 car's movement through the application of voltage to the motors.
 
-#The outputs:
+## The outputs
 
 The output of the H-bridge in this project is directed to the four motors of the car, which
 control its motion. The H-bridge can adjust the voltage applied to the motors, allowing the
@@ -105,7 +105,7 @@ The output of the gear controls is displayed on an LCD TFT screen on a separate 
 which is connected to the main system through an I2C bus wiring setup utilizing the masterslave concept. This allows the user to see the current gear setting of the car and make
 adjustments as needed.
 
-#Priority handling
+## Priority handling
 
 In the freeRTOS system, the checkForLaneCollisionTask has the highest priority with a priority
 level of 3. Its primary function is to detect lanes and navigate the car through them. The CITask
@@ -115,7 +115,7 @@ headlights and gear handling. The mp3PlayerTask has the lowest priority with a p
 priority level of 1 and is responsible for both user interaction with the touch screen to control
 music and display shift gears on the screen.
 
-#Some several potential problems or limitations may be faced during the implementation of this project:
+## Some several potential problems or limitations may be faced during the implementation of this project:
 
 1. Limited resources: The two Arduino Uno boards may not have the sufficient processing
 power or memory to handle all of the tasks concurrently, which could lead to
@@ -136,7 +136,7 @@ impact the performance of the LKA and CI features, leading to potentially unsafe
 conditions.
 
 
-#How to use
+## How to use
 
 1.Connect the circuit as in the diagrams
 2.Upload the screen.ino code on the arduino uno with shield screen
