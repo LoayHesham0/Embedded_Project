@@ -139,7 +139,11 @@ conditions.
 ## How to use
 
 1.Connect the circuit as in the diagrams
+
 2.Upload the screen.ino code on the arduino uno with shield screen
+
 3.Upload the master.ino code on the other arduino
+
 4.Put the Car on white track with black lanes
+
 5.ENJOY ;)
